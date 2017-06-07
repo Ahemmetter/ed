@@ -13,4 +13,7 @@ b = csqrt((w/c) ** 2 - k ** 2)
 
 A = (1 - a/b)*(1 - b / a) * np.exp(1j * a * d) + (1 + a / b) * (1 + b / a) * np.exp(-1j * a * d)
 plt.contour(k, w, A, [0])
+plt.title("Waveguide modes for a dielectric slab (n = 4, d = 1)")
+plt.xlabel("$\omega$")
+plt.ylabel("k")
 plt.show()
